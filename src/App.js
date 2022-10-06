@@ -1,25 +1,37 @@
+import {useState ,useEffect } from "react";
+import axios from "axios";
 import logo from './logo.svg';
+import Post from './components/post'
+import App from "App";
 import './App.css';
 
 function App() {
+  // const [posts, setPosts] = useState([]);
+
+  // useEffect(() =>{
+  //   axios.get("https://my-json-server.typicode.com/minzamammalik/jsonplaceholder/posts")
+  //     .then(response => {
+  //       console.log("response :", response.data);
+  //       setPosts(response.data);
+
+  //     })
+  //     .catch(err => {
+  //       console.log("error :", err);
+
+  //     })
+
+  // },[])
+
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <div className="App">
+
+      <h1>Ahmed Raza</h1>
+      
+     </div>
   );
-}
+
 
 export default App;
